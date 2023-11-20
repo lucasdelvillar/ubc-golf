@@ -1,13 +1,43 @@
-body {
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
 }
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Mulish', sans-serif; 
+}
+
+ul {
+  list-style: none;
+}
+
+/******************************************
+/* NAVIGATION BAR 
+/*******************************************/
+
+/******************************************
+/* HEADER 
+/*******************************************/

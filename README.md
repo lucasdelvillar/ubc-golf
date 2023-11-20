@@ -4,7 +4,7 @@ In the project directory, run this commands:
 
 ### `npm install`
 
-The installs all of the dependencies needed to run the app. 
+This installs all of the dependencies needed to run the app. 
 
 ## To start the app locally:
 

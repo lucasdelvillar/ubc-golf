@@ -80,19 +80,3 @@
     color: white;
     margin: 0 5px;
 }
-
-@media (max-width: 767px) {
-    .footer-container,
-    .footer-social {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-nav {
-        justify-content: center;
-    }
-
-    .footer-social .svg-inline--fa {
-        font-size: 1.2rem;
-    }
-}

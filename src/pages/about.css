@@ -1,0 +1,13 @@
+.about-text {
+    color: white;
+  font-size: 18px;
+  line-height: 150%;
+  position: absolute;
+  left: -188px;
+  top: 155px;
+  width: 616px;
+  height: min-content;
+  text-align: end;
+  align-items: end;
+  flex-direction: column;
+}

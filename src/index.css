@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
 /* Box Model Hack */
 * {
   box-sizing: border-box;
@@ -27,7 +29,7 @@ html {
 }
 
 body {
-  font-family: 'Mulish', sans-serif; 
+  font-family: 'Roboto', sans-serif;
   background-color: #292929; 
 }
 
@@ -35,10 +37,82 @@ ul {
   list-style: none;
 }
 
+/* hr {
+  max-width: 80%;
+  margin: 0 auto;
+} */
+
 /******************************************
 /* NAVIGATION BAR 
 /*******************************************/
 
 /******************************************
-/* HEADER 
+/* TUTORIAL SECTION
 /*******************************************/
+
+.tutorial-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tutorial-left {
+  max-width:  50%; /* flex child needs to be 50% of container width so items can be evenly spaced*/
+}
+
+.tutorial-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  justify-content: center;
+  margin-right: 100px;
+  max-width: 50%;  /* flex child needs to be 50% of container width so items can be evenly spaced*/
+}
+
+.hr-title {
+  position: relative;
+  bottom: 3rem;
+  font-size: 96px;
+  font-weight: 900;
+  color: rgba(41, 41, 41); /* Black text color */
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  text-shadow: 
+    -1px -1px 0 #fff,  
+     1px -1px 0 #fff,
+    -1px  1px 0 #fff,
+     1px  1px 0 #fff; /* Shadow offsets and color to create the white outline effect */
+}
+
+.hr-intro {
+  text-align: right;
+  color: white;
+  line-height: 25px;
+}
+
+.tutorial-media-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-top: 2px solid white;
+  max-width: 80%;
+}
+
+.ml-title {
+  color: white;
+  text-transform: uppercase;
+  font-size: 45;
+}
+
+.media-one, .media-two, .media-three {
+  margin-top: 10px;
+  width: 400px;
+  height: 400px;
+}

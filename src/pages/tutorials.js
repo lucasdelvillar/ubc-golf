@@ -1,6 +1,7 @@
 import NavBar from '../components/navbar/navbar';
 import Footer from '../components/footer/footer';
-import logo from '../assets/tutorials_logo.png'
+import logo from '../assets/tutorials_logo.png';
+import image1 from '../assets/tutorials_image-1.jpg';
 
 const Tutorials = () => {
     return (
@@ -18,17 +19,16 @@ const Tutorials = () => {
                     </p>
                 </div>
             </header>
-            {/* <hr></hr> */}
+            <span className='ml-title'>Want to learn to golf?</span>
             <section className='tutorial-media-links'>   
-                <span className='ml-title'>Want to learn to golf?</span>
-                <div>
-                    <img className='media-one' alt='YouTube'></img>
-                    <img className='media-two' alt='Instagram'></img>
-                    <img className='media-three' alt='Tiktok'></img>
+                <div className='media-container'>
+                    <div className='media-sub-container'>
+                        <img className='media-one' src={image1} alt='YouTube'></img>
+                        <p className='media-paragraph-right'>Explore our extensive collection of golfing tutorials on our YouTube channel, where a world of expertise and insights awaits. Immerse yourself in engaging and informative videos designed to elevate your golfing skills. From mastering the perfect swing to unraveling the nuances of course strategy, our YouTube tutorials cater to golfers of all levels. Whether you're a beginner taking your first steps on the green or a seasoned player aiming for precision, our curated content offers a valuable resource for honing your technique and enhancing your overall golfing experience. Join us on YouTube and embark on a journey of improvement and enjoyment in the realm of golf.</p>
+                            
+                    </div>
                 </div>
-                
             </section>
-
             <Footer/>
         </div>
     );

@@ -56,20 +56,10 @@ hr {
   align-items: stretch;
 }
 
-.tutorial-left {
-  max-width:  50%; /* flex child needs to be 50% of container width so items can be evenly spaced*/
-  align-self: flex-start;
-}
-
 .tutorial-logo {
   max-width: 100%;
   height: auto;
 }
-
-/* .header-left {
-  display: flex;
-  height: 700px
-} */
 
 .header-right {
   display: flex;
@@ -155,10 +145,84 @@ hr {
   color: white;
 }
 
-.media-paragraph-right {
+.media-paragraph-container {
+  display: flex;
+  flex-direction: column;
   margin-left: 10rem;
 }
 
-.media-paragraph-left {
-  margin-right: 10rem;
+.tutorial-list-container { /* this is the <ul> */
+  margin-top: 12rem; /* this should total to 13 with .green-golf-ball margin-top*/
+}
+
+.tutorial-list-item { /* this is the <li>*/
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.tutorial-social-media-links { /* this is the anchor tags withing the <ul>*/
+  color: white;
+  text-decoration-skip-ink: none; /* Prevents the underline from being cut off */
+  text-underline-offset: 0.5em;
+  margin-bottom: 1rem;
+}
+
+.green-golf-ball {
+  margin-top: 1rem; /* this should total to 13 with .tutorial-list-container */
+  max-width: 300px;
+  height: auto;
+}
+
+/******************************************
+/* MEMBER SECTION
+/*******************************************/
+
+.member-header {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 5rem;
+}
+
+.member-logo {
+  max-width: 474px;
+  height: auto;
+}
+
+.member-header-left {
+  max-width: 80%;
+}
+
+.member-header-right {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  justify-content: center;
+  max-width: 50%;  /* flex child needs to be 50% of container width so items can be evenly spaced*/
+}
+
+.member-hr-title {
+  position: relative;
+  bottom: 3rem;
+  font-size: 96px;
+  font-weight: 900;
+  color: rgba(41, 41, 41); /* Black text color */
+  text-transform: uppercase;
+  text-shadow: 
+    -1px -1px 0 #fff,  
+     1px -1px 0 #fff,
+    -1px  1px 0 #fff,
+     1px  1px 0 #fff; /* Shadow offsets and color to create the white outline effect */
+}
+
+.member-hr-intro {
+  text-align: right;
+  color: white;
+  line-height: 25px;
+  max-width: 81%;
+}
+
+.squiggle {
+  position: absolute;
+  /* bottom: 10px; */
 }

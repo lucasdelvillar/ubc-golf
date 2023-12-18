@@ -2,6 +2,7 @@ import NavBar from '../components/navbar/navbar';
 import Footer from '../components/footer/footer';
 import logo from '../assets/tutorials_logo.png';
 import image1 from '../assets/tutorials_image-1.jpg';
+import greenBall from '../assets/tutorials_image-2.png'
 
 const Tutorials = () => {
     return (
@@ -19,13 +20,24 @@ const Tutorials = () => {
                     </p>
                 </div>
             </header>
-            <span className='ml-title'>Want to learn to golf?</span>
+            <span className='ml-title'>Discover Golf</span>
             <section className='tutorial-media-links'>   
                 <div className='media-container'>
                     <div className='media-sub-container'>
                         <img className='media-one' src={image1} alt='YouTube'></img>
-                        <p className='media-paragraph-right'>Explore our extensive collection of golfing tutorials on our YouTube channel, where a world of expertise and insights awaits. Immerse yourself in engaging and informative videos designed to elevate your golfing skills. From mastering the perfect swing to unraveling the nuances of course strategy, our YouTube tutorials cater to golfers of all levels. Whether you're a beginner taking your first steps on the green or a seasoned player aiming for precision, our curated content offers a valuable resource for honing your technique and enhancing your overall golfing experience. Join us on YouTube and embark on a journey of improvement and enjoyment in the realm of golf.</p>
-                            
+                        <div className='media-paragraph-container'>
+                            <p className='media-paragraph-right'>Dive into a world of golfing expertise with our tutorials available on YouTube and Instagram. On YouTube, our comprehensive video series provides in-depth insights into perfecting your swing, understanding course strategy, and enhancing your overall golfing skills. Immerse yourself in engaging and informative content tailored for golfers of all levels. Meanwhile, our Instagram tutorials deliver visually captivating snippets, offering quick and valuable tips to elevate your game. Whether you prefer the depth of YouTube or the visual appeal of Instagram, our tutorials cater to your golfing journey. Follow us on both platforms to stay updated, join a vibrant community, and turn every golfing moment into an opportunity for improvement and enjoyment!</p> 
+                            <ul className='tutorial-list-container'>
+                                <li className="tutorial-list-item">
+                                    <a className='tutorial-social-media-links' href='https://l.instagram.com/?u=https%3A%2F%2Fwww.youtube.com%2F%40iEddieTV&e=AT2RDCOyZy4osRU0NmU3jbI9Gn2X1XQjR7i69ph63InVgkrPX_g7SzYTw2AprWrBKn2UGH8zFrGxOYUvWxRadzRr7ua2JcjsM_d90w'>Watch on YouTube</a>
+                                </li>
+                                <li className="tutorial-list-item">
+                                    <a className='tutorial-social-media-links' href='https://www.instagram.com/eddie_golf_/reels/'>Watch on Instagram</a>
+                                </li>
+                            </ul>
+                            <img className='green-golf-ball'src={greenBall} alt='green golf ball'></img>
+                        </div>
+                        
                     </div>
                 </div>
             </section>

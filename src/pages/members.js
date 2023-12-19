@@ -16,10 +16,31 @@ const Members = () => {
                 <div className='member-header-right'>
                     <h1 className='member-hr-title'>Members</h1>
                     <p className='member-hr-intro'>
-                        Welcome to our comprehensive golfing tutorials hub, where passion meets precision! Whether you're a novice looking to take your first swing or a seasoned golfer aiming to refine your technique, our curated collection of tutorials offers a wealth of knowledge to elevate your game. Dive into expert insights on perfecting your swing, mastering various shots, understanding course strategy, and fine-tuning your overall golfing prowess. Our user-friendly tutorials cater to golfers of all levels, providing step-by-step guidance, pro tips, and interactive resources to enhance every aspect of your golfing journey. Discover the keys to unlocking your full potential on the greens and transform your golfing experience into a fulfilling and enjoyable pursuit. Let the learning begin, and may your golf game reach new heights with our dedicated tutorials!
+                        Welcome to our Golf Club Members' Hub, where we celebrate the heart and soul of our community—the passionate individuals who have joined us on this golfing journey. Get to know the faces and stories behind the swings as we spotlight the diverse and talented members who make our golf club a vibrant and thriving community. From seasoned pros to those just teeing off, each member brings a unique flavor to our shared love for the game. Explore the profiles, anecdotes, and achievements of our members, and join us in celebrating the spirit of camaraderie that defines our golf club.
                     </p>
                 </div>
             </header>
+            <span className='members-review-title'>Member Reviews</span>
+            <section className="member-section">
+                <div className='member-sub-container'>
+                    <div className="member">
+                        <img src="" alt=""></img>
+                        <p className="member-review">"Being part of this golf club has transformed my game. The camaraderie and support from fellow members are truly inspiring!"</p>
+                </div>
+                    <div className="member">
+                        <img src="" alt=""></img>
+                        <p className="member-review">"The golf club is not just about playing golf; it's about building friendships that last a lifetime. Proud to be a member!"</p>
+                    </div>
+                    <div className="member">
+                        <img src="" alt=""></img>
+                        <p className="member-review">"From beginners to pros, this club caters to all skill levels. It's the perfect place to share the joy of golf with like-minded enthusiasts."</p>
+                    </div>
+                </div>
+                
+            </section>
+            <section className='all-members-container'> 
+            
+            </section>
             <Footer/>
         </div>
     );

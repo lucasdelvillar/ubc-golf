@@ -82,7 +82,6 @@ hr {
      1px -1px 0 #fff,
     -1px  1px 0 #fff,
      1px  1px 0 #fff; /* Shadow offsets and color to create the white outline effect */
-  margin-right: -1rem; /* gets rid of letter spacing at end of the word*/
 }
 
 

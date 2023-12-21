@@ -1,5 +1,4 @@
 .footer {
-    position: fixed; 
     bottom: 0; 
     left: 0;
     width: 100%; 
@@ -76,7 +75,12 @@
     padding-top: 10px;
 }
 
+
 .footer-bottom .nav-link {
     color: white;
     margin: 0 5px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
 }

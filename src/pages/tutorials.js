@@ -31,10 +31,10 @@ const Tutorials = () => {
                             <div className='bottom'>
                                 <ul className='tutorial-list-container'>
                                     <li className="tutorial-list-item">
-                                        <a className='tutorial-social-media-links' href='https://l.instagram.com/?u=https%3A%2F%2Fwww.youtube.com%2F%40iEddieTV&e=AT2RDCOyZy4osRU0NmU3jbI9Gn2X1XQjR7i69ph63InVgkrPX_g7SzYTw2AprWrBKn2UGH8zFrGxOYUvWxRadzRr7ua2JcjsM_d90w'>Watch on YouTube</a>
+                                        <a className='tutorial-social-media-links' href='https://l.instagram.com/?u=https%3A%2F%2Fwww.youtube.com%2F%40iEddieTV&e=AT2RDCOyZy4osRU0NmU3jbI9Gn2X1XQjR7i69ph63InVgkrPX_g7SzYTw2AprWrBKn2UGH8zFrGxOYUvWxRadzRr7ua2JcjsM_d90w' target="_blank" rel="noreferrer">Watch on YouTube</a>
                                     </li>
                                     <li className="tutorial-list-item">
-                                        <a className='tutorial-social-media-links' href='https://www.instagram.com/eddie_golf_/reels/'>Watch on Instagram</a>
+                                        <a className='tutorial-social-media-links' href='https://www.instagram.com/eddie_golf_/reels/' target="_blank" rel="noreferrer">Watch on Instagram</a>
                                     </li>
                             </ul>
                             <img className='green-golf-ball'src={greenBall} alt='green golf ball'></img>

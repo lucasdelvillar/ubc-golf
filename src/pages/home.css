@@ -1,0 +1,358 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+
+  /* HOME */
+.home-header {
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  padding-left: 70px;
+}
+
+.home-title {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  font-size: 96px;
+  font-weight: 900;
+  color: rgba(41, 41, 41);
+  text-transform: uppercase;
+  text-shadow: 
+      -1px -1px 0 #fff,  
+      1px -1px 0 #fff,
+      -1px  1px 0 #fff,
+      1px  1px 0 #fff;
+  text-align: center;
+}
+
+.home-intro {
+  color: #FBF7F3;
+  font-size: 35px;
+  font-family: Beau Rivage;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.home-image {
+  width: 705px;
+  height: 751px;
+  position: relative;
+  left: 100px;
+}
+
+
+  /* GALLERY */
+  
+
+  .gallery-header .gallery-title,
+  .gallery-header .gallery-description {
+      color: white;
+      text-align: center;
+  }
+  .gallery-title{
+    font-weight: '700';
+    font-size: 50px; 
+  
+  }
+  
+  .gallery-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    padding-top: 10px;
+  }
+  
+  .gallery-image {
+    width: 33.33%;
+     height: 700px; 
+    object-fit: cover; 
+  }
+  
+  .nav-arrow {
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease;
+}
+
+.nav-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+  
+  .left-arrow {
+    left: 10px;
+  }
+  
+  .right-arrow {
+    right: 10px;
+  }
+  
+
+    /* STATISTICS */
+  
+  .statistics-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Text color */
+  }
+  
+  
+  .statistics-highlight {
+    flex-basis: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tee-container {
+    position: relative;
+    display: inline-block; 
+  }
+  
+  .tee-container::before {
+    content: '';
+    position: absolute;
+    width: 350px; 
+    height: 350px; 
+    background: #D8E94D;
+    border-radius: 50%;
+    z-index: -1;
+    top: 75%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .placeholder-image {
+    position: relative;
+    z-index: 1;
+    width: 400px; 
+    height: auto; 
+    text-align: left;
+  }
+  
+  .statistics-info {
+    flex-basis: 50%; 
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* two columns */
+    grid-template-rows: 1fr 1fr; /* two rows */
+    gap: 20px; 
+    text-align: center;
+    
+  }
+  
+  .stat h3 {
+    font-size: 28px;
+    margin-bottom: 0.5em;
+  }
+
+  .stat p {
+    font-size: 24px;
+    margin-bottom: 0.5em;
+  }
+  
+  /* General Styles */
+
+  
+    /* FEATURES */
+  .featureTitle {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 4px;
+    color: white;
+  }
+
+  .features-content {
+    align-self: stretch;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+    display: inline-flex;
+  }
+
+  .features-container {
+    width: 100%;
+    height: 100%;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background: #292929;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 80px;
+    display: inline-flex;
+  }
+  .whiteText {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    word-wrap: break-word;
+  }
+  .info-container {
+  flex: 1 1 0;
+  height: 274px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  display: inline-flex;
+}
+
+.info-icon {
+  alignSelf: stretch;
+  flex: 1 1 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  display: flex;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+}
+
+
+.info-text {
+  align-self: stretch;
+  height: 140px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  display: flex;
+}
+
+.info-action {
+  height: 38px;
+  padding-top: 8px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  display: flex;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding-top: 8px;
+}
+
+
+.info-title,
+.info-content {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+
+.info-action-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+  
+/* FAQs */
+
+.faq-item-content {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer {
+    color: #FBF7F3;
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.faq-item-content svg {
+    transition: transform 0.3s ease;
+}
+
+  .faqs-container {
+    width: 100%;
+    height: 100%;
+    padding: 112px 64px;
+    background: #292929;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .faq-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .faq-title {
+    text-align: center;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.60px;
+    word-wrap: break-word;
+  }
+  
+  .faq-description {
+    text-align: center;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    word-wrap: break-word;
+  }
+  
+  .faq-item {
+    width: 767px;
+    height: 88px;
+    border-radius: 8px;
+    border: 2px #D3D3D3 solid;
+    overflow: hidden;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .faq-item-content {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  

@@ -1,5 +1,3 @@
-import NavBar from '../components/navbar/navbar';
-import Footer from '../components/footer/footer';
 import logo from '../assets/tutorials_logo.png';
 import image1 from '../assets/tutorials_image-1.jpg';
 import greenBall from '../assets/tutorials_image-2.png'

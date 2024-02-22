@@ -1,5 +1,3 @@
-import NavBar from '../components/navbar/navbar';
-import Footer from '../components/footer/footer';
 import logo from '../assets/glove-and-ball-br.png';
 
 const Events = () => {

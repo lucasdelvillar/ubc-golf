@@ -10,7 +10,11 @@ function NavBar() {
     };
 
     useGSAP(() => {
-        gsap.to(".nav-bar", {y: 55, duration: 1, delay: 0.5}); 
+        gsap.to(".nav-bar", {
+            ease: "back.out(3)",
+            y: 55, 
+            duration: 1, 
+            delay: 0.5}); 
     })
 
     return (

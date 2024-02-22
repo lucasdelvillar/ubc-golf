@@ -10,17 +10,11 @@ function NavBar() {
     };
 
     useGSAP(() => {
-        // gsap code here...
-        gsap.to(".logo", {rotation: 360, x: 100, duration: 1}); // <-- automatically reverted
-        gsap.to(".about", {x: 10, duration: 1}); // <-- automatically reverted
-        gsap.to(".tutorials", {x: 10, duration: 1}); 
-        gsap.to(".members", {x: 10, duration: 1}); 
-        gsap.to(".events", {x: 10, duration: 1}); 
-        gsap.to(".contact-form", {x: 10, duration: 1}); 
+        gsap.to(".nav-bar", {y: 55, duration: 1, delay: 0.5}); 
     })
 
     return (
-        <nav className="fixed w-full z-20 top-0 start-0 border-b border-gray-200">
+        <nav className="nav-bar fixed -top-14 start-0 w-full z-20">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 {/* Logo */}
                 <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -29,7 +23,7 @@ function NavBar() {
                 </a>
                 <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                     {/* Sign Up Button */}
-                    <button type="button" className="text-black bg-white hover:bg-gray-400 focus:ring-4 focus:outline-none focus:green-neon font-medium rounded-lg text-sm px-4 py-2 text-center">Sign Up</button>
+                    <button type="button" className="text-black bg-white hover:bg-gray-400 focus:ring-4 focus:outline-none focus:green-neon font-medium rounded-full text-sm px-4 py-2 text-center">Sign Up</button>
                     {/* Collapsed Navigation Bar Button */}
                     <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-100 dark:hover:bg-gray-700 " aria-controls="navbar-sticky" aria-expanded={isMenuOpen} onClick={toggleMenu}>
                         <span className="sr-only">Open navigation bar</span>
@@ -42,20 +36,20 @@ function NavBar() {
                 <div className={`items-center justify-between w-full md:flex md:w-auto ${isMenuOpen ? '' : 'hidden'}`} id="navbar-sticky">
                     <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                         <li>
-                            <a href="#" className="about block py-2 px-3 text-white md:underline underline-offset-4 md:decoration-green-neon bg-blue-900 rounded md:bg-transparent md:text-white md:p-0" aria-current="page">About</a>
+                            <a href="#" className="block py-2 px-3 text-white md:underline underline-offset-4 md:decoration-green-neon bg-blue-900 rounded md:bg-transparent md:text-white md:p-0" aria-current="page">About</a>
                         </li>
                         <li> 
                             {/* mobile first approach, default styles are for small viewport, while adding custome styles for larger ones */}
-                            <a href="#" className="tutorials block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:underline underline-offset-4 md:hover:decoration-green-neon md:hover:bg-transparent md:p-0">Tutorials</a>
+                            <a href="#" className="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:underline underline-offset-4 md:hover:decoration-green-neon md:hover:bg-transparent md:p-0">Tutorials</a>
                         </li>
                         <li>
-                            <a href="#" className="members block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:underline underline-offset-4 md:hover:decoration-green-neon md:hover:bg-transparent md:p-0">Members</a>
+                            <a href="#" className="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:underline underline-offset-4 md:hover:decoration-green-neon md:hover:bg-transparent md:p-0">Members</a>
                         </li>
                         <li>
-                            <a href="#" className="events block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:underline underline-offset-4 md:hover:decoration-green-neon md:hover:bg-transparent md:p-0">Events</a>
+                            <a href="#" className="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:underline underline-offset-4 md:hover:decoration-green-neon md:hover:bg-transparent md:p-0">Events</a>
                         </li>
                         <li>
-                            <a href="#" className="contact-form block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:underline underline-offset-4 md:hover:decoration-green-neon md:hover:bg-transparent md:p-0">Contact Form</a>
+                            <a href="#" className="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:underline underline-offset-4 md:hover:decoration-green-neon md:hover:bg-transparent md:p-0">Contact Form</a>
                         </li>
                     </ul>
                 </div>

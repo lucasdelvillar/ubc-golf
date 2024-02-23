@@ -1,25 +1,45 @@
 import logo from '../assets/tutorials_logo.png';
 import image1 from '../assets/tutorials_image-1.jpg';
 import greenBall from '../assets/tutorials_image-2.png'
+import image2 from '../assets/1.png'
+import image3 from '../assets/friends-golf.jpeg'
 
 const Tutorials = () => {
+
     return (
-        <div>
-            <NavBar />
+        <div id='tutorials'>
             {/* Refactor this into a header component later on */}
-            <header className='tutorial-header'>
-                <div className='header-left'>
-                    <img className="tutorial-logo" src={logo} alt="Tutorial Logo"></img>
-                </div>
-                <div className='header-right'>
-                    <h1 className='hr-title'>Tutorials</h1>
-                    <p className='hr-intro'>
-                        Welcome to our comprehensive golfing tutorials hub, where passion meets precision! Whether you're a novice looking to take your first swing or a seasoned golfer aiming to refine your technique, our curated collection of tutorials offers a wealth of knowledge to elevate your game. Dive into expert insights on perfecting your swing, mastering various shots, understanding course strategy, and fine-tuning your overall golfing prowess. Our user-friendly tutorials cater to golfers of all levels, providing step-by-step guidance, pro tips, and interactive resources to enhance every aspect of your golfing journey. Discover the keys to unlocking your full potential on the greens and transform your golfing experience into a fulfilling and enjoyable pursuit. Let the learning begin, and may your golf game reach new heights with our dedicated tutorials!
+            <div className='tutorial-header flex-col'>
+                <div className='flex-col justify-center items-center space-y-10 text-center mb-10'>
+                    {/* had relative in the h1 */}
+                    <h2 className='hr-title text-black text-5xl font-bold tracking-wider uppercase mb-16'>Tutorials</h2> 
+                    {/*****  YOUTUBE TUTORIALS *****/}
+                    <img className='w-4/5 m-auto rounded-lg border-b-2 border-green-neon' src={image1} alt="old timer golfing"></img>
+                    <p className='text-white px-10'>
+                        Dive into expert insights on perfecting your swing, mastering various clubs, and understanding course strategy on YouTube!  
+                    </p>  
+                    <a href='https://www.youtube.com/@iEddieTV' target="_blank" rel="noopener noreferrer">
+                        <button type="button" className="text-black bg-white hover:bg-gray-400 focus:ring-4 focus:outline-none focus:green-neon font-medium rounded-full text-sm px-4 py-2 mt-10">YouTube</button>   
+                    </a>
+                    
+                    {/*****  INSTAGRAM TUTORIALS *****/}
+                    <img className='w-4/5 m-auto rounded-lg border-b-2 border-green-neon' src={image3} alt="friends golfing"></img>
+                    <p className="text-white px-10">
+                        Our tutorials cater to golfers of all levels providing step-by-step guidance and pro tips to enhance your golfing journey on Instagram!
                     </p>
+                    <a href='https://www.instagram.com/eddie_golf_/reels/' target="_blank" rel="noopener noreferrer">
+                        <button type="button" className="text-black bg-white hover:bg-gray-400 focus:ring-4 focus:outline-none focus:green-neon font-medium rounded-full text-sm px-4 py-2 mt-10">Instagram</button>   
+                    </a>
+                    {/* <p className="text-white px-10 text-center">
+                        Unlock your full potential on the greens and transform your golfing experience into a fulfilling and enjoyable pursuit. Let the learning begin!
+                    </p> */}
                 </div>
-            </header>
-            <span className='ml-title'>Discover Golf</span>
-            <section className='tutorial-media-links'>   
+                <div className='hidden md:inline-block'>
+                    <img className="tutorial-logo" src={image2} alt="Tutorial Logo"></img>
+                </div>
+            </div>
+            {/* <span className='ml-title sm:hidden'>Discover Golf</span> */}
+            {/* <section className='tutorial-media-links sm:hidden'>   
                 <div className='media-container'>
                     <img className='media-one' src={image1} alt='YouTube'></img>
                     <div className='media-sub-container'>
@@ -42,8 +62,7 @@ const Tutorials = () => {
                         
                     </div>
                 </div>
-            </section>
-            <Footer/>
+            </section> */}
         </div>
     );
 };

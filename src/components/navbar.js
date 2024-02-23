@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
-function NavBar() {
+function NavBar(props) {
     const [isMenuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -11,14 +11,14 @@ function NavBar() {
 
     useGSAP(() => {
         gsap.to(".nav-bar", {
-            ease: "back.out(3)",
+            ease: "power1.out",
             y: 55, 
             duration: 1.5, 
-            delay: 0.5}); 
+            delay: 1}); 
     })
 
     return (
-        <nav className="nav-bar fixed -top-14 start-0 w-full z-20">
+        <nav className="nav-bar bg-black fixed -top-14 start-0 w-full z-20">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 {/* Logo */}
                 <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -37,23 +37,23 @@ function NavBar() {
                     </button>
                 </div>
                 {/* Expanded Navigation Bar Button */}
-                <div className={`items-center justify-between w-full md:flex md:w-auto ${isMenuOpen ? '' : 'hidden'}`} id="navbar-sticky">
+                <div className={`items-center justify-between w-full md:flex md:w-auto bg-black ${isMenuOpen ? '' : 'hidden'}`} id="navbar-sticky">
                     <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                         <li>
-                            <a href="#" className="block py-2 px-3 text-white md:underline underline-offset-4 md:decoration-green-neon bg-blue-900 rounded md:bg-transparent md:text-white md:p-0" aria-current="page">About</a>
+                            <a href={`#${props.aboutLink}`} className="block py-2 px-3 text-white md:underline underline-offset-4 md:decoration-green-neon bg-blue-900 rounded md:bg-transparent md:text-white md:p-0" aria-current="page">About</a>
                         </li>
                         <li> 
                             {/* mobile first approach, default styles are for small viewport, while adding custome styles for larger ones */}
-                            <a href="#" className="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:underline underline-offset-4 md:hover:decoration-green-neon md:hover:bg-transparent md:p-0">Tutorials</a>
+                            <a href={`#${props.tutorialLink}`} className="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:underline underline-offset-4 md:hover:decoration-green-neon md:hover:bg-transparent md:p-0">Tutorials</a>
                         </li>
                         <li>
-                            <a href="#" className="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:underline underline-offset-4 md:hover:decoration-green-neon md:hover:bg-transparent md:p-0">Members</a>
+                            <a href={`#${props.membersLink}`} className="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:underline underline-offset-4 md:hover:decoration-green-neon md:hover:bg-transparent md:p-0">Members</a>
                         </li>
                         <li>
-                            <a href="#" className="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:underline underline-offset-4 md:hover:decoration-green-neon md:hover:bg-transparent md:p-0">Events</a>
+                            <a href={`#${props.eventsLink}`} className="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:underline underline-offset-4 md:hover:decoration-green-neon md:hover:bg-transparent md:p-0">Events</a>
                         </li>
                         <li>
-                            <a href="#" className="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:underline underline-offset-4 md:hover:decoration-green-neon md:hover:bg-transparent md:p-0">Contact Form</a>
+                            <a href={`#${props.contactFormLink}`} className="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:underline underline-offset-4 md:hover:decoration-green-neon md:hover:bg-transparent md:p-0">Contact Form</a>
                         </li>
                     </ul>
                 </div>

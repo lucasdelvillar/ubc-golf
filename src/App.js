@@ -1,11 +1,19 @@
 import NavBar from './components/navbar';
-// import Footer from './components/footer';
+import About from './components/about';
+import Tutorials from './components/tutorials';
+import Members from './components/members';
+import Events from './components/events';
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      
+      <header>
+        <NavBar tutorialLink={'tutorials'}/>
+      </header>
+      <About />
+      <Tutorials/>
+      <Members />
+      <Events />
     </div>
   );
 }

@@ -1,24 +1,25 @@
 import NavBar from './components/navbar';
-import About from './components/about';
+import Welcome from './components/Welcome';
 import Tutorials from './components/tutorials';
 import Members from './components/members';
 import Events from './components/events';
 import Faq from './components/faq';
 import ContactForm from './components/ContactForm';
-
+import friends from './assets/friends-golf-landscape.jpeg'
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <NavBar tutorialLink={'tutorials'} aboutLink={'about'} membersLink={'members'}/>
-      </header>
-      <About />
-      <Tutorials/>
-      <Members />
-      <Events />
-      <Faq />
-      <ContactForm />
+      <NavBar tutorialLink={'tutorials'} aboutLink={'about'} membersLink={'members'}/>
+      <div className='h-[72px]'>
+
+      </div>
+      <Welcome />
+      {/* <Tutorials/> */}
+      {/* <Members /> */}
+      {/* <Events /> */}
+      {/* <Faq /> */}
+      {/* <ContactForm /> */}
     </div>
   );
 }

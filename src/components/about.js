@@ -36,8 +36,8 @@ const About = () => {
     }, []); // Empty dependency array to run the effect only once on mount
 
     return (
-        <section id='about' className="flex flex-col justify-center px-2 relative mb-40">
-            <div className='flex md:flex-row justify-center relative top-36 z-0'>
+        <section id='about' className="flex flex-col justify-center px-2 mb-52">
+            <div className='flex md:flex-row justify-center relative top-28 z-0'>
                 <img className='image md:max-w-[40%] md:max-h-auto' src={isMobile ? logoSmall : logo} alt='hand holding tee and golf ball'></img>
                 <img className='hidden md:inline-block md:max-w-[25%] md:max-h-auto mt-5' src={michaelJordan} alt='Michael Jordan'></img>
             </div>

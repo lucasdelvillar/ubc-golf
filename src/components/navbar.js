@@ -21,7 +21,7 @@ function NavBar(props) {
     return (
         // is using GSAP need to add -top-20 to navbar
         <nav className="nav-bar bg-black fixed start-0 w-full z-20 border-b">
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 my-3">
+            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 {/* Logo */}
                 <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src={logo} className="h-8" alt="Flowbite Logo"/>

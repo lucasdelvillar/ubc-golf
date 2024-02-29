@@ -1,8 +1,8 @@
-import NavBar from './components/NavBar';
-import About from './components/About';
-import Tutorials from './components/Tutorials';
+import NavBar from './components/navbar';
+import About from './components/about';
+import Tutorials from './components/tutorials';
 import Members from './components/members';
-import Events from './components/Events';
+import Events from './components/events';
 import Faq from './components/faq';
 import ContactForm from './components/ContactForm';
 

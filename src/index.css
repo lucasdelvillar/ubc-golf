@@ -58,6 +58,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: stretch;
+  padding: 2.5rem 0;
 }
 
 .tutorial-logo {
@@ -79,13 +80,14 @@ hr {
   bottom: 3rem;
   font-size: 96px;
   font-weight: 900;
-  color: rgba(41, 41, 41); /* Black text color */
+  /* color: rgba(41, 41, 41); Black text color */
+  color: white;
   text-transform: uppercase;
-  text-shadow: 
+  /* text-shadow: 
     -1px -1px 0 #fff,  
      1px -1px 0 #fff,
     -1px  1px 0 #fff,
-     1px  1px 0 #fff; /* Shadow offsets and color to create the white outline effect */
+     1px  1px 0 #fff; Shadow offsets and color to create the white outline effect */
 }
 
 
@@ -94,6 +96,10 @@ hr {
   color: white;
   line-height: 25px;
   max-width: 80%;
+}
+
+.hr-intro-second {
+  margin-top: 2.5rem;
 }
 
 .tutorial-media-links {

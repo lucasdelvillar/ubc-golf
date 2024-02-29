@@ -20,7 +20,7 @@ function NavBar(props) {
 
     return (
         // is using GSAP need to add -top-20 to navbar
-        <nav className="nav-bar bg-black fixed start-0 w-full z-20 border-b">
+        <nav className="nav-bar bg-black fixed start-0 w-full z-20">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 {/* Logo */}
                 <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -28,8 +28,6 @@ function NavBar(props) {
                     {/* <span className="logo self-center text-2xl font-semibold whitespace-nowrap text-white">UBC Golf</span> */}
                 </a>
                 <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                    {/* Sign Up Button */}
-                    <button type="button" className="text-black bg-white hover:bg-gray-400 focus:ring-4 focus:outline-none focus:green-neon font-medium text-sm px-4 py-2 text-center">Sign Up</button>
                     {/* Collapsed Navigation Bar Button */}
                     <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-100 dark:hover:bg-gray-700 " aria-controls="navbar-sticky" aria-expanded={isMenuOpen} onClick={toggleMenu}>
                         <span className="sr-only">Open navigation bar</span>

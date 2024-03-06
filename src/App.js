@@ -10,14 +10,14 @@ import friends from './assets/friends-golf-landscape.jpeg'
 function App() {
   return (
     <div className="App">
-      <NavBar tutorialLink={'tutorials'} aboutLink={'about'} membersLink={'members'}/>
+      <NavBar tutorialsLink={'tutorials'} aboutLink={'about'} membersLink={'members'} eventsLink={'events'}/>
       <div className='h-[72px]'>
 
       </div>
       <Welcome />
-      {/* <Tutorials/> */}
+      <Events />
       {/* <Members /> */}
-      {/* <Events /> */}
+      {/* <Tutorials/> */}
       {/* <Faq /> */}
       {/* <ContactForm /> */}
     </div>

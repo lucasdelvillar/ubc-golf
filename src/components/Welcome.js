@@ -54,31 +54,6 @@ const Welcome = () => {
                 </div>
                 <img className='md:w-[500px] md:pt-10 m-auto opacity-75 border-green-neon border-b-2' src={friends} alt='friends'></img>
             </section>
-            <section className='flex flex-col md:justify-center md:items-center w-[100%] mb-16 px-5'>
-                <div className='text-start md:text-end text-white pt-10 md:w-[80%]'>
-                    <p className='text-start uppercase text-5xl font-bold text-white mb-10 pb-4 border-b-2 border-white'>
-                        Clinics & Events
-                    </p>
-                    <div className=''>
-                        <p className='text-white mb-2'>
-                            Discover the joy of golf through the UBC Golf Club's engaging and instructive clinics. 
-                        </p>
-                        <p className='text-white mb-2'>
-                            Our clinics are thoughtfully designed group sessions aimed at introducing participants to the fundamentals of golf or enhancing their existing skills. 
-                        </p>
-                        <p className='hidden text-white mb-2 md:block'>
-                            Led by experienced instructors, these sessions provide a dynamic and supportive environment for individuals of all skill levels.
-                        </p>
-                        <p className='text-white mb-10 md:block'>
-                            Follow us on Instagram to learn more and get the latest news on our next clinic!
-                        </p>
-                    </div>
-                    <button type="button" className="h-10 w-50 text-black bg-white font-medium hover:bg-gray-400 focus:ring-4 focus:outline-none focus:green-neon text-sm rounded-full px-4 py-2 text-center"> {/*flex flex-row justify-center items-center*/}
-                        Learn More
-                    {/* <ArrowSVG />  */}
-                    </button> 
-                </div>
-            </section>
         </> 
     );
 };

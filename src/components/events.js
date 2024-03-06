@@ -1,43 +1,29 @@
-import logo from '../assets/glove-and-ball-br.png';
-
 const Events = () => {
     return (
-        <section className='events flex-col justify-center items-center space-y-5 mb-16 px-5'>
-            <h2 className='text-white text-5xl text-start font-bold uppercase tracking-wider mb-10'>Events</h2>
-            <p className='text-white text-start'>
-                Discover a calendar filled with exciting golf events and activities organized by our club.
-            </p>
-            <p className='text-white text-start'>
-               There is limited availability to each event so hurry up and sign up now!
-            </p>
-            <a href='https://calendar.google.com/calendar/u/0?cid=MGZjZTljMDQwZGI3MWVjMzcwOWU4MjkzM2E2ODViOTNlMzFmZTAyOGY1MWVlOTM1YjdmYzMzMjliMzc5MzNlYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t' target="_blank" rel="noopener noreferrer">
-                        <button type="button" className="text-black bg-white hover:bg-gray-400 focus:ring-4 focus:outline-none focus:green-neon font-medium rounded-lg text-sm px-4 py-2 mt-10">Google Calendar</button>   
-                    </a>
+        <section id='events' className='events flex flex-col md:justify-center md:items-center space-y-5 mb-16 px-5'>
+            <div className='md:w-[80%] md:text-end'>
+                <h2 className='text-white text-5xl font-bold uppercase tracking-wider mb-10'>Calendar</h2>
+                <p className='text-white mb-2'>
+                    Check out and subscribe to our calendar to see the lastest clinics, events, and activities organized by our club.
+                </p>
+                <p className='text-white mb-2'>
+                    There is limited availability to each event so hurry up and sign up now! 
+                </p>
+                <a href='https://calendar.google.com/calendar/u/0?cid=MGZjZTljMDQwZGI3MWVjMzcwOWU4MjkzM2E2ODViOTNlMzFmZTAyOGY1MWVlOTM1YjdmYzMzMjliMzc5MzNlYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t' target="_blank" rel="noopener noreferrer" className='flex flex-col justify-center items-start md:items-end md:hidden'>
+                        <button type="button" className="text-black text-end bg-white hover:bg-gray-400 focus:ring-4 focus:outline-none focus:green-neon font-medium rounded-full text-sm px-4 py-2 mt-10">Google Calendar</button>   
+                </a>
+                <div className="hidden mt-10 md:block">
+                    <iframe 
+                    src="https://embed.styledcalendar.com/#kWGli1kSaJCYzDk0RbpZ" 
+                    title="Styled Calendar" 
+                    class="h-[700px]" 
+                    style={{width: '100%', border: 'none'}} 
+                    data-cy="calendar-embed-iframe"></iframe>
+                    <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
+                </div>
+            </div>
             {/* Will need to make a button that links to google calender on mobile */}
         </section>
-        // <div>
-        //     <header className='event-header'>
-        //         <div className='event-header-left'>
-        //             <img className="event-logo" src={logo} alt="Event Logo"></img>
-        //         </div>
-        //         <div className='header-right'>
-        //             <h1 className='hr-title'>Events</h1>
-        //             <p className='hr-intro'>
-        //                 Our Golf Events Hub is your go-to destination for all things golf-related. Whether you're a seasoned golfer or just starting to explore the greens, this page is your gateway to a vibrant community of golf enthusiasts. Discover a calendar filled with exciting golf events, tournaments, and activities organized by our university club. From friendly matches to competitive tournaments, we cater to golfers of all skill levels. Join us in fostering a passion for the sport, connecting with fellow golfers, and creating memorable experiences on the fairways!
-        //             </p>
-        //         </div>
-        //     </header>
-        //     <span className='ml-title'>Upcoming Events</span>
-        //     <div className="calendar-container">
-        //         <iframe 
-        //         src="https://embed.styledcalendar.com/#kWGli1kSaJCYzDk0RbpZ" 
-        //         title="Styled Calendar" 
-        //         class="styled-calendar-container" 
-        //         style={{width: '100%', border: 'none'}} 
-        //         data-cy="calendar-embed-iframe"></iframe>
-        //         <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
-        //     </div>
-        // </div>
     );
 };
  

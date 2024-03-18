@@ -13,7 +13,7 @@ const Tutorials = () => {
             {/* Refactor this into a header component later on */}
             
 
-            {/* <span className='ml-title'>Discover Golf</span>
+            <span className='ml-title'>Discover Golf</span>
             <section className='tutorial-media-links'>   
                 <div className='media-container'>
                     <img className='media-one' src={image1} alt='YouTube'></img>
@@ -37,7 +37,7 @@ const Tutorials = () => {
                         
                     </div>
                 </div>
-            </section> */}
+            </section>
         </div>
     );
 };

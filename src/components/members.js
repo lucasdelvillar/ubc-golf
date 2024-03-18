@@ -5,6 +5,7 @@ import profile3 from '../assets/profile3.png';
 import profile4 from '../assets/profile4.jpg';
 import profile5 from '../assets/profile5.jpg';
 import profile6 from '../assets/profile6.jpg';
+import golf from '../assets/golf.png'
 
 const Members = () => {
     return (
@@ -14,6 +15,7 @@ const Members = () => {
                     <div className="w-full max-w-6xl mx-auto">
                         <div className="text-center max-w-xl mx-auto">
                             <h1 className="text-6xl md:text-7xl font-bold mb-5 text-white">What members are saying.</h1>
+                            {/* <img src={golf} alt=''></img> */}
                             <h3 className="text-xl mb-5 font-light">Read what our memebers have to say about our club!</h3>
                             <div className="text-center mb-10">
                                 <span className="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>

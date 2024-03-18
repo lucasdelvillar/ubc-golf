@@ -20,7 +20,7 @@ const Welcome = () => {
 
     return (
         <>
-            <section id='about' className="flex flex-col justify-center items-center mt-10 mb-32 px-2 md:flex-row md:mt-32">
+            <section id='about' className="flex flex-col justify-center items-center pt-[90px] mb-20 md:mb-32 px-2 md:flex-row md:mt-16">
                 <img className='image -rotate-45 mb-5 w-[400px] md:w-1/2' src={glove} alt='glove and ball'></img>
                 <div className='flex flex-col justify-center items-center z-10'>
                     <p className='about-text uppercase text-white text-5xl font-bold text-start px-3 mb-5'>
@@ -36,8 +36,8 @@ const Welcome = () => {
                     </button> 
                 </div>
             </section>
-            <section className='flex flex-col mb-10 md:flex-row md:mb-28'>
-                <div className='flex flex-col absolute md:static text-start text-white px-5 pt-10 z-10 mx-auto'>
+            <section className='flex flex-col md:flex-row'>
+                <div className='flex flex-col absolute md:static text-start text-white px-5 pt-16 md:pt-10 z-10 mx-auto'>
                     <p className='uppercase text-5xl font-bold text-start mb-5'>
                         Welcome
                     </p>
@@ -52,7 +52,7 @@ const Welcome = () => {
                     </p>
                     {/* <img className='hidden relative top-[200px] w-[400px] opacity-75 md:block' src={shoes} alt='shoes'></img> */}
                 </div>
-                <img className='md:w-[500px] md:pt-10 m-auto opacity-75 border-green-neon border-b-2' src={friends} alt='friends'></img>
+                <img className='md:w-[500px] md:pt-10 m-auto border-green-neon border-b-2' src={friends} alt='friends'></img>
             </section>
         </> 
     );

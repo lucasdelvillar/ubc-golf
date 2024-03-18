@@ -9,12 +9,20 @@ import image5 from '../assets/friends-golf-sq.jpeg'
 const Tutorials = () => {
 
     return (
-        <div id='tutorials'>
-            {/* Refactor this into a header component later on */}
-            
+        <section id='tutorials' className=''>
+            <div className='text-start md:text-end text-white pt-10 md:w-[80%] mx-auto'>
+                <p className='text-center uppercase text-5xl font-bold text-white mb-10 pb-4 md:border-b-2 md:border-white'>
+                    Tutorials
+                </p>
+            </div>
+        </section>
+    );
+};
+ 
+export default Tutorials;
 
-            <span className='ml-title'>Discover Golf</span>
-            <section className='tutorial-media-links'>   
+{/* <section className='tutorial-media-links'>
+                <span className='ml-title'>Discover Golf</span>   
                 <div className='media-container'>
                     <img className='media-one' src={image1} alt='YouTube'></img>
                     <div className='media-sub-container'>
@@ -37,9 +45,4 @@ const Tutorials = () => {
                         
                     </div>
                 </div>
-            </section>
-        </div>
-    );
-};
- 
-export default Tutorials;
+            </section> */}

@@ -11,37 +11,10 @@ const Tutorials = () => {
     return (
         <div id='tutorials'>
             {/* Refactor this into a header component later on */}
-            <div className='tutorial-header flex-col'>
-                <div className='flex-col justify-start items-start space-y-10 text-start mb-16 px-5'>
-                    {/* had relative in the h1 */}
-                    <h2 className='text-white text-5xl text-start font-bold uppercase tracking-wider mb-16'>Tutorials</h2> 
-                    {/*****  YOUTUBE TUTORIALS *****/}
-                    <img className='m-auto border-b-2 border-green-neon' src={image4} alt="old timer golfing"></img>
-                    <p className='text-white text-start'>
-                        Dive into expert insights on perfecting your swing, mastering various clubs, and understanding course strategy on YouTube!  
-                    </p>  
-                    <a href='https://www.youtube.com/@iEddieTV' target="_blank" rel="noopener noreferrer">
-                        <button type="button" className="text-black bg-white hover:bg-gray-400 focus:ring-4 focus:outline-none focus:green-neon font-medium text-sm px-4 py-2 mt-10">YouTube</button>   
-                    </a>
-                    
-                    {/*****  INSTAGRAM TUTORIALS *****/}
-                    <img className='m-auto border-b-2 border-green-neon' src={image5} alt="friends golfing"></img>
-                    <p className="text-white ">
-                        Our tutorials cater to golfers of all levels providing step-by-step guidance and pro tips to enhance your golfing journey on Instagram!
-                    </p>
-                    <a href='https://www.instagram.com/eddie_golf_/reels/' target="_blank" rel="noopener noreferrer">
-                        <button type="button" className="text-black  bg-white hover:bg-gray-400 focus:ring-4 focus:outline-none focus:green-neon font-medium text-sm px-4 py-2 mt-10">Instagram</button>   
-                    </a>
-                    {/* <p className="text-white px-10 text-center">
-                        Unlock your full potential on the greens and transform your golfing experience into a fulfilling and enjoyable pursuit. Let the learning begin!
-                    </p> */}
-                </div>
-                {/* <div className='hidden md:inline-block'>
-                    <img className="tutorial-logo" src={image2} alt="Tutorial Logo"></img>
-                </div> */}
-            </div>
-            {/* <span className='ml-title sm:hidden'>Discover Golf</span> */}
-            {/* <section className='tutorial-media-links sm:hidden'>   
+            
+
+            {/* <span className='ml-title'>Discover Golf</span>
+            <section className='tutorial-media-links'>   
                 <div className='media-container'>
                     <img className='media-one' src={image1} alt='YouTube'></img>
                     <div className='media-sub-container'>

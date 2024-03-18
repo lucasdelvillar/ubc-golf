@@ -16,7 +16,7 @@ function App() {
       </div>
       <Welcome />
       <Events />
-      {/* <Members /> */}
+      <Members />
       {/* <Tutorials/> */}
       {/* <Faq /> */}
       {/* <ContactForm /> */}

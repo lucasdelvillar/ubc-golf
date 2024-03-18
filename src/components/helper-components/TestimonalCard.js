@@ -1,25 +1,22 @@
-const TestimonialCard = ({ testimonial, description, profilePicture, name, title }) => {
-    return (
-      <div className='space-y-5 bg-gray-900 h-auto w-auto rounded-lg px-5 py-5'>
-        <p className='testimonial-header text-white font-bold'>
-          {testimonial}
-        </p>
-        <p className='description text-gray-400 text-sm'>
-          {description}
-        </p>
-        <div className='profile-container flex flex-row justify-start items-start'>
-          <img className='profile-picture w-[40px] h-auto' src={profilePicture} alt='profile'></img>
-          <div className='profile-title-container flex-col justify-start items-center mx-5'>
-            <p className='name text-white'>
-              {name}
-            </p>
-            <p className='title text-gray-400 text-sm'>
-              {title}
-            </p>
-          </div>
+import React from 'react';
+
+const TestimonialCard = ({ profileImg, name, title, quote }) => {
+  return (
+    <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+      <div className="w-full flex mb-4 items-center">
+        <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+          <img src={profileImg} alt="" />
+        </div>
+        <div className="flex-grow pl-3">
+          <h6 className="font-bold text-sm uppercase text-gray-600">{name}</h6>
         </div>
       </div>
-    );
-  };
-  
-  export default TestimonialCard;
+      <div className="w-full space-y-5">
+        <p className='font-bold'>{title}</p>
+        <p className='text-sm'>{quote}</p>
+      </div>
+    </div>
+  );
+};
+
+export default TestimonialCard;

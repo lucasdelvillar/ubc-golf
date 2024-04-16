@@ -52,7 +52,7 @@ const Welcome = () => {
                     </p>
                     {/* <img className='hidden relative top-[200px] w-[400px] opacity-75 md:block' src={shoes} alt='shoes'></img> */}
                 </div>
-                <img className='md:w-[500px] md:pt-10 m-auto border-green-neon border-b-2' src={friends} alt='friends'></img>
+                <img className='md:w-[500px] md:pt-10 m-auto opacity-75 md:opacity-100 border-green-neon border-b-2' src={friends} alt='friends'></img>
             </section>
         </> 
     );

@@ -42,7 +42,7 @@ const ContactForm = () => {
                                             Our Location
                                         </h4>
                                         <p className="text-base text-gray-500 dark:text-dark-6">
-                                            We don't have a physical location yet! But are the in prcoess of securing a club room.
+                                            We don't have a physical location yet! But we are the in prcoess of securing a club room.
                                         </p>
                                     </div>
                                 </div>

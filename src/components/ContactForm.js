@@ -83,7 +83,7 @@ const ContactForm = () => {
                                             Phone Number
                                         </h4>
                                         <p className="text-base text-gray-500 dark:text-dark-6">
-                                            Please message us on instagram to join our What's App group chat!
+                                            Please message us on Instagram to join our What's App group chat!
                                         </p>
                                     </div>
                                 </div>

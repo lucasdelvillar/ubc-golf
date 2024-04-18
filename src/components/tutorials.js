@@ -1,48 +1,65 @@
-import logo from '../assets/tutorials_logo.png';
-import image1 from '../assets/tutorials_image-1.jpg';
-import greenBall from '../assets/tutorials_image-2.png'
-import image2 from '../assets/1.png'
-import image3 from '../assets/friends-golf.jpeg'
-import image4 from '../assets/tutorials_image-1-sq.jpg'
-import image5 from '../assets/friends-golf-sq.jpeg'
+// Tutorials.jsx
+import React, { useRef, useState } from 'react';
+import VideoCard from './helper-components/VideoCard.js'; // Adjust the import path as neede
+import tutorial1 from '../assets/tutorial1.mp4'; // Adjust path as necessary
+import tutorial2 from '../assets/tutorial2.mp4';
+import tutorial3 from '../assets/tutorial3.mp4';
+
 
 const Tutorials = () => {
+  const carouselRef = useRef(null);
+  const [progresses, setProgresses] = useState([]);
 
-    return (
-        <section id='tutorials' className=''>
-            <div className='text-start md:text-end text-white pt-10 md:w-[80%] mx-auto'>
-                <p className='text-center uppercase text-5xl font-bold text-white mb-10 pb-4 md:border-b-2 md:border-white'>
-                    Tutorials
-                </p>
+  const scrollLeft = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: -200, behavior: 'smooth' });
+    }
+  };
+
+  const scrollRight = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: 200, behavior: 'smooth' });
+    }
+  };
+
+  const handleTimeUpdate = (video, index) => {
+    const progress = (video.currentTime / video.duration) * 100;
+    setProgresses(prevProgresses => {
+      const newProgresses = [...prevProgresses];
+      newProgresses[index] = progress;
+      return newProgresses;
+    });
+  };
+
+  const videoSources = [tutorial1, tutorial2, tutorial3, tutorial3, tutorial3];
+
+  return (
+    <section className="bg-black py-10" id="tutorials">
+      <div className="container mx-auto text-center">
+        <h2 className="text-white text-5xl font-bold uppercase mb-10">Improve Your Game</h2>
+        <div className="flex justify-center items-center gap-4">
+        <button onClick={scrollLeft} className="w-8 h-8 bg-gray-800 text-white rounded-full flex items-center justify-center">
+            &#8592;
+          </button>
+          <div className="flex overflow-hidden" ref={carouselRef}>
+            <div className="flex snap-x snap-mandatory gap-4" style={{ scrollSnapType: 'x mandatory' }}>
+              {videoSources.map((source, index) => (
+                <VideoCard
+                  key={index}
+                  source={source}
+                  index={index}
+                  onTimeUpdate={handleTimeUpdate}
+                />
+              ))}
             </div>
-        </section>
-    );
+          </div>
+          <button onClick={scrollRight} className="w-8 h-8 bg-gray-800 text-white rounded-full flex items-center justify-center">
+            &#8594;
+          </button>
+        </div>
+      </div>
+    </section>
+  );
 };
- 
-export default Tutorials;
 
-{/* <section className='tutorial-media-links'>
-                <span className='ml-title'>Discover Golf</span>   
-                <div className='media-container'>
-                    <img className='media-one' src={image1} alt='YouTube'></img>
-                    <div className='media-sub-container'>
-                        
-                        <div className='media-paragraph-container'>
-                            <p className='media-paragraph-right'>Dive into a world of golfing expertise with our tutorials available on YouTube and Instagram. On YouTube, our comprehensive video series provides in-depth insights into perfecting your swing, understanding course strategy, and enhancing your overall golfing skills. Immerse yourself in engaging and informative content tailored for golfers of all levels. Meanwhile, our Instagram tutorials deliver visually captivating snippets, offering quick and valuable tips to elevate your game. Whether you prefer the depth of YouTube or the visual appeal of Instagram, our tutorials cater to your golfing journey. Follow us on both platforms to stay updated, join a vibrant community, and turn every golfing moment into an opportunity for improvement and enjoyment!</p> 
-                            <div className='bottom'>
-                                <ul className='tutorial-list-container'>
-                                    <li className="tutorial-list-item">
-                                        <a className='tutorial-social-media-links' href='https://l.instagram.com/?u=https%3A%2F%2Fwww.youtube.com%2F%40iEddieTV&e=AT2RDCOyZy4osRU0NmU3jbI9Gn2X1XQjR7i69ph63InVgkrPX_g7SzYTw2AprWrBKn2UGH8zFrGxOYUvWxRadzRr7ua2JcjsM_d90w' target="_blank" rel="noreferrer">Watch on YouTube</a>
-                                    </li>
-                                    <li className="tutorial-list-item">
-                                        <a className='tutorial-social-media-links' href='https://www.instagram.com/eddie_golf_/reels/' target="_blank" rel="noreferrer">Watch on Instagram</a>
-                                    </li>
-                            </ul>
-                            <img className='green-golf-ball'src={greenBall} alt='green golf ball'></img>
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </section> */}
+export default Tutorials;

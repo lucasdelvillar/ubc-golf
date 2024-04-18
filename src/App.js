@@ -16,9 +16,10 @@ function App() {
       </div>
       <Welcome />
       <Events />
+      <Tutorials/> 
       <Members />
       {/**** To be completed in a later version ****/}
-      {/* <Tutorials/> */} 
+     
       {/* <Faq /> */}
       {/****                                    ****/}
       <ContactForm />

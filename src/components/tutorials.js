@@ -5,6 +5,11 @@ import tutorial2 from '../assets/tutorial2.mp4';
 import tutorial3 from '../assets/tutorial3.mp4';
 import tutorial4 from '../assets/tutorial4.mp4';
 import tutorial5 from '../assets/tutorial5.mp4';
+import t1_thumbnail from '../assets/t1-thumbnail.jpg';
+import t2_thumbnail from '../assets/t2-thumbnail.jpg';
+import t3_thumbnail from '../assets/t3-thumbnail.jpg';
+import t4_thumbnail from '../assets/t4-thumbnail.jpg';
+import t5_thumbnail from '../assets/t5-thumbnail.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -12,6 +17,7 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 const Tutorials = () => {
   const carouselRef = useRef(null);
   const [progresses, setProgresses] = useState([]);
+  const [activeVideo, setActiveVideo] = useState(null);
 
   const scrollAmount = 280;
 
@@ -37,12 +43,16 @@ const Tutorials = () => {
     });
   };
 
+  const handlePlay = (index) => {
+    setActiveVideo(index);
+  };
+
   const videos = [
-    { source: tutorial1, title: "The basic fundamentals of the golf set up!" },
-    { source: tutorial2, title: "How to position your golf ball at set up!" },
-    { source: tutorial3, title: "How to grip your golf club" },
-    { source: tutorial4, title: "How to bomb your drivers right down the fairways" },
-    { source: tutorial5, title: "The correct impact position when hitting irons" }
+    { source: tutorial1, title: "The Basic Fundamentals of the Golf Set Up!", thumbnail: t1_thumbnail },
+    { source: tutorial2, title: "How to Position your Golf Ball at Set Up!", thumbnail: t2_thumbnail  },
+    { source: tutorial3, title: "How to Grip your Golf Club", thumbnail: t3_thumbnail  },
+    { source: tutorial4, title: "How to Bomb your Drivers Right Down the Fairways", thumbnail: t4_thumbnail  },
+    { source: tutorial5, title: "The Correct Impact Position When Hitting Irons", thumbnail: t5_thumbnail  }
   ];
 
   return (
@@ -57,11 +67,13 @@ const Tutorials = () => {
             <div className="flex snap-x snap-mandatory gap-4" style={{ scrollSnapType: 'x mandatory' }}>
               {videos.map((video, index) => (
                 <VideoCard
-                  key={index}
                   source={video.source}
                   index={index}
                   onTimeUpdate={handleTimeUpdate}
                   title={video.title}
+                  thumbnail={video.thumbnail}
+                  isPlaying={activeVideo === index}
+                  onPlay={handlePlay}
                 />
               ))}
             </div>

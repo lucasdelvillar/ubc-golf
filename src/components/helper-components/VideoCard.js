@@ -1,21 +1,27 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons';
 
-const VideoCard = ({ source, title }) => {
+const VideoCard = ({ source, index, title, thumbnail,  isPlaying, onPlay, }) => {
   const videoRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
 
-  const togglePlay = () => {
-    if (videoRef.current.paused) {
+  
+  useEffect(() => {
+    if (isPlaying) {
       videoRef.current.play();
-      setIsPlaying(true);
     } else {
       videoRef.current.pause();
-      setIsPlaying(false);
+    }
+  }, [isPlaying]);
+
+  const togglePlay = () => {
+    if (videoRef.current.paused) {
+      onPlay(index);
+    } else {
+      onPlay(null);
     }
   };
 
@@ -58,6 +64,12 @@ const VideoCard = ({ source, title }) => {
           <source src={source} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+        <img
+          src={thumbnail}
+          alt="Thumbnail"
+          className={`absolute inset-0 w-full h-full object-cover ${isPlaying ? 'hidden' : ''}`}
+          onClick={togglePlay}
+        />
         <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <div className="w-20 h-20 flex justify-center items-center bg-green-neon bg-opacity-80 rounded-3xl">
             <button onClick={togglePlay} className="text-white focus:outline-none">
@@ -66,7 +78,7 @@ const VideoCard = ({ source, title }) => {
           </div>
         </div>
         <div className="absolute bottom-4 left-0 right-0 flex flex-col items-center px-4 visibility-hidden group-hover:visibility-visible transition-opacity duration-300 opacity-0 group-hover:opacity-100">
-          <div className="w-56 text-white text-2xl mb-2 self-start text-left" style={{ fontSize: '24px' }}>{title}</div> {/* Styled title, now left aligned */}
+          <div className="w-56 text-white text-2xl mb-2 self-start text-left" style={{ fontSize: '24px' }}>{title}</div>
           <div className="flex items-center w-full">
             <div
               className="relative w-full h-1 bg-gray-500 rounded mr-2"

@@ -119,19 +119,27 @@ const ContactForm = () => {
                             <div
                                 className="relative p-8 bg-white rounded-lg shadow-lg dark:bg-dark-2 sm:p-12"
                             >
-                                <form>
+                                <form
+                                    action="https://formspree.io/f/myyrlbzy"
+                                    method="POST"
+                                    >
+                                        
                                     <div className="mb-6">
                                         <input
                                             type="text"
+                                            name="name"
                                             placeholder="Your Name"
                                             className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
+                                            required
                                         />
                                     </div>
                                     <div className="mb-6">
                                         <input
                                             type="email"
+                                            name="email"
                                             placeholder="Your Email"
                                             className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
+                                            required
                                         />
                                     </div>
                                     <div className="mb-6">
@@ -139,13 +147,16 @@ const ContactForm = () => {
                                             type="text"
                                             placeholder="Your Phone"
                                             className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
+                                            
                                         />
                                     </div>
                                     <div className="mb-6">
                                         <textarea
                                             rows="6"
                                             placeholder="Your Message"
+                                            name="message"
                                             className="border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"
+                                            required
                                         ></textarea>
                                     </div>
                                     <div>

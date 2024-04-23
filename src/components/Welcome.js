@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ArrowSVG from './helper-components/ArrowSVG';
-import glove from '../assets/glove-and-ball-br.png';
+import glove from '../assets/glove-and-ball-br-min.png';
 import friends from '../assets/tutorials_image-1.jpg';
 
 const Welcome = () => {

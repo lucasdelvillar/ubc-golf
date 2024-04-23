@@ -14,7 +14,7 @@ const Members = () => {
                 <div className="w-full bg-black px-5 py-10 text-white">
                     <div className="w-full max-w-6xl mx-auto">
                         <div className="text-center max-w-xl mx-auto">
-                            <h1 className="text-6xl md:text-7xl font-bold mb-5 text-white">What members are saying.</h1>
+                            <h1 className="uppercase text-5xl md:text-5xl font-bold mb-5 text-white">What members are saying.</h1>
                             {/* <img src={golf} alt=''></img> */}
                             <h3 className="text-xl mb-5 font-light">Read what our memebers have to say about our club!</h3>
                             <div className="text-center mb-10">

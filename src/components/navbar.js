@@ -47,10 +47,10 @@ function NavBar(props) {
                             <a href={`#${props.eventsLink}`} className="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:underline underline-offset-4 md:hover:decoration-green-neon md:hover:bg-transparent md:p-0">Events</a>
                         </li>
                         <li>
-                            <a href={`#${props.membersLink}`} className="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:underline underline-offset-4 md:hover:decoration-green-neon md:hover:bg-transparent md:p-0">Members</a>
+                            <a href={`#${props.tutorialsLink}`} className="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:underline underline-offset-4 md:hover:decoration-green-neon md:hover:bg-transparent md:p-0">Tutorials</a>
                         </li>
                         <li>
-                            <a href={`#${props.tutorialsLink}`} className="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:underline underline-offset-4 md:hover:decoration-green-neon md:hover:bg-transparent md:p-0">Tutorials</a>
+                            <a href={`#${props.membersLink}`} className="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:underline underline-offset-4 md:hover:decoration-green-neon md:hover:bg-transparent md:p-0">Members</a>
                         </li>
                         <li>
                             <a href={`#${props.contactFormLink}`} className="block py-2 px-3 text-white rounded hover:bg-gray-700 md:hover:underline underline-offset-4 md:hover:decoration-green-neon md:hover:bg-transparent md:p-0">Contact Form</a>

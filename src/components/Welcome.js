@@ -6,16 +6,16 @@ import friends from '../assets/tutorials_image-1.jpg';
 
 const Welcome = () => {
     useGSAP(() => {
-        gsap.fromTo(
-            '.image',
-            { scale: 0.5, opacity: 0 },
-            { delay: 0.5, scale: 1, opacity: 1, duration: 2.5, ease: 'power2.out'}
-          );
-          gsap.fromTo(
-            '.about-text',
-            { scale: 0.5, opacity: 0 },
-            { delay: 0.5, scale: 1, opacity: 1, duration: 2.5, ease: 'power2.out' }
-          );  
+        // gsap.fromTo(
+        //     '.image',
+        //     { scale: 0.5, opacity: 0 },
+        //     { delay: 0.5, scale: 1, opacity: 1, duration: 2.5, ease: 'power2.out'}
+        //   );
+        //   gsap.fromTo(
+        //     '.about-text',
+        //     { scale: 0.5, opacity: 0 },
+        //     { delay: 0.5, scale: 1, opacity: 1, duration: 2.5, ease: 'power2.out' }
+        //   );  
     })
 
     return (
@@ -30,10 +30,12 @@ const Welcome = () => {
                         Our club provides an exciting and inclusive environment for UBC students to come together, share their love for the golf, and enjoy more than just the game.
                     </p>
                     {/******* SIGN UP BUTTON ******/}
-                    <button type="button" className="about-text h-16 w-80 text-black bg-white font-medium hover:bg-gray-400 focus:ring-4 focus:outline-none focus:green-neon text-2xl rounded-full px-4 py-2 text-center flex flex-row justify-center items-center"> 
+                    <a href='https://docs.google.com/forms/d/e/1FAIpQLSf5CuYCCXJDS9MUmEEBlPTsvkRpm66UAk95MON45JaPoGP5bw/viewform' target="_blank">
+                        <button type="button" className="about-text h-16 w-80 text-black bg-white font-medium hover:bg-gray-400 focus:ring-4 focus:outline-none focus:green-neon text-2xl rounded-full px-4 py-2 text-center flex flex-row justify-center items-center"> 
                         Sign Up 
-                    <ArrowSVG /> 
-                    </button> 
+                        <ArrowSVG /> 
+                        </button> 
+                    </a>
                 </div>
             </section>
             <section className='flex flex-col md:flex-row'>

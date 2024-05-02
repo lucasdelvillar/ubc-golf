@@ -5,11 +5,11 @@ import tutorial2 from '../assets/tutorial2.mp4';
 import tutorial3 from '../assets/tutorial3.mp4';
 import tutorial4 from '../assets/tutorial4.mp4';
 import tutorial5 from '../assets/tutorial5.mp4';
-import t1_thumbnail from '../assets/t1-thumbnail.jpg';
-import t2_thumbnail from '../assets/t2-thumbnail.jpg';
-import t3_thumbnail from '../assets/t3-thumbnail.jpg';
-import t4_thumbnail from '../assets/t4-thumbnail.jpg';
-import t5_thumbnail from '../assets/t5-thumbnail.jpg';
+import t1_thumbnail from '../assets/l1-thumbnail.png';
+import t2_thumbnail from '../assets/l2-thumbnail.png';
+import t3_thumbnail from '../assets/l3-thumbnail.png';
+import t4_thumbnail from '../assets/l4-thumbnail.png';
+import t5_thumbnail from '../assets/l5-thumbnail.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 

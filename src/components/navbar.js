@@ -40,7 +40,7 @@ function NavBar(props) {
                 <div className={`items-center justify-between w-full md:flex md:w-auto bg-black ${isMenuOpen ? '' : 'hidden'}`} id="navbar-sticky">
                     <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                         <li>
-                            <a href={`#${props.aboutLink}`} className="block py-2 px-3 text-white bg-blue-900 rounded md:bg-transparent md:text-white md:p-0 md:hover:underline underline-offset-4 md:hover:decoration-green-neon md:hover:bg-transparent" aria-current="page">About</a> {/*md:underline underline-offset-4 md:decoration-green-neon */}
+                            <a href={`#${props.aboutLink}`} className="block py-2 px-3 text-white rounded hover:bg-gray-700 md:bg-transparent md:text-white md:p-0 md:hover:underline underline-offset-4 md:hover:decoration-green-neon md:hover:bg-transparent" aria-current="page">About</a> {/*md:underline underline-offset-4 md:decoration-green-neon */}
                         </li>
                         <li> 
                             {/* mobile first approach, default styles are for small viewport, while adding custome styles for larger ones */}

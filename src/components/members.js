@@ -34,18 +34,18 @@ const Members = () => {
                                     quote={`"Joining the UBC Golf Club has been such a great decision. It's one of the friendliest clubs I've ever been a part of."`}
                                 />
                                 <TestimonialCard
-                                    profileImg={profile2} // Assuming profile1 is the image URL
-                                    name="Calvin Chan"
+                                    profileImg={profile4} // Assuming profile1 is the image URL
+                                    name="Cedric Lin"
                                     title="Best place to practice my swing ⛳️🏌️‍♂️"
-                                    quote={`"Rather than paying hundreds of dollars for a golf coach, I'm able to go to their clinics and learn everything I need to know."`}     
+                                    quote={`"Provided many opportunities to learn, practice, and finesse my golf skills with like-minded students. There’s something for everyone here at any skill level."`}     
                                 />
                             </div>
                             <div className="px-3 md:w-1/3">
                                 <TestimonialCard
-                                    profileImg={profile4} // Assuming profile1 is the image URL
-                                    name="Tomie Ewart"
+                                    profileImg={profile2} // Assuming profile1 is the image URL
+                                    name="Alexander Griesbach "
                                     title="The golf coaches are top notch 👌"
-                                    quote={`"The golf coaches are more than qualified to improve your golf skills. The coaches give personalized tips and because of this I've gotten so much better in a short amount of time."`}
+                                    quote={`"The UBC Golf Club introduced me to my current coach and to my regular weekend warriors! This club is super beginner-friendly and has allowed me to really become the best golfer I can be."`}
                                 />
                                 <TestimonialCard
                                     profileImg={profile3} // Assuming profile1 is the image URL

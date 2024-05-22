@@ -1,8 +1,8 @@
 import TestimonialCard from './helper-components/TestimonalCard';
 import profile1 from '../assets/profile1.png';
-import profile2 from '../assets/profile2.png';
+import profile2 from '../assets/profile_1_real.png'; // change
 import profile3 from '../assets/profile3.png';
-import profile4 from '../assets/profile4.jpg';
+import profile4 from '../assets/profile_2_real.png'; // change
 import profile5 from '../assets/profile5.jpg';
 import profile6 from '../assets/profile6.jpg';
 import golf from '../assets/golf.png'

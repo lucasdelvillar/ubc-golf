@@ -47,7 +47,7 @@ const Events = () => {
                     </a>
                     <div className="hidden mt-10 md:block border-white">
                         <iframe 
-                        src="https://embed.styledcalendar.com/#kWGli1kSaJCYzDk0RbpZ" 
+                        src="https://embed.styledcalendar.com/#fBZF3m54ziVwumtEh5Fv" 
                         title="Styled Calendar" 
                         class="h-[700px]" 
                         style={{width: '100%', border: 'none'}} 

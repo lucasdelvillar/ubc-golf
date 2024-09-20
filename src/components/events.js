@@ -32,9 +32,8 @@ const Events = () => {
                 </div>
             </section>
             <img className='md:hidden' src={friends} alt='friends'></img>
-            <section id='calendar' className='flex flex-col md:justify-center md:items-center space-y-5 mb-16 mt-16 md:mb-16 px-5'>
+            {/* <section id='calendar' className='flex flex-col md:justify-center md:items-center space-y-5 mb-16 mt-16 md:mb-16 px-5'>
                 <div className='md:w-[80%] md:text-end'>
-                    {/* <img className='relative top-[25px] right-[25px] md:right-[200px] mt-16 md:mt-0 md:ml-[150px] md:w-[50%] z-0' src={tool} alt='tool'></img> */}
                     <h2 className='relative text-white text-5xl font-bold uppercase tracking-wider mb-10 z-50'>Calendar</h2>
                     <p className='text-white mb-2'>
                         Subscribe to our Google Calendar to see the lastest clinics, events, and activities organized by our club.
@@ -55,7 +54,7 @@ const Events = () => {
                         <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </>
     );
 };
